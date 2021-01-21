@@ -21,4 +21,4 @@ SOURCES += ./src/buildCalculate.cpp \
     ./src/CustomLikeBluePaintPro.cpp \
     ./src/main.cpp
 FORMS += ./res/CustomLikeBluePaintPro.ui
-RESOURCES += CustomLikeBluePaintPro.qrc
+RESOURCES += res/CustomLikeBluePaintPro.qrc

@@ -8,7 +8,7 @@
 #include <QToolButton>
 #include <QPushButton>
 #include <QApplication>
-//#include <QDesktopWidget>
+#include <QDesktopWidget>
 #include <QLineEdit>
 #include <QPushButton>
 
@@ -70,7 +70,7 @@ CustomLikeBluePaintPro::CustomLikeBluePaintPro(QWidget *parent)
 	connect(ui.calculateButton, &QPushButton::clicked, this, &CustomLikeBluePaintPro::slotCalculate);
 
 	alterItemTextDia = new QDialog();
-	alterItemTextDia->setGeometry(/*QApplication::desktop()->screen()->width()*/1920 / 2 - 125, /*QApplication::desktop()->screen()->height()*/1080 / 2 - 30, 250, 40);
+	alterItemTextDia->setGeometry(QApplication::desktop()->screen()->width() / 2 - 125, QApplication::desktop()->screen()->height() / 2 - 30, 250, 40);
 	alterItemTextDia->setWindowFlags(Qt::WindowCloseButtonHint);
 	lineEdit = new QLineEdit(alterItemTextDia);
 	lineEdit->setGeometry(5, 5, 145, 30);

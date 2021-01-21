@@ -69,7 +69,7 @@ void CustomArrow::paint(QPainter *painter, const QStyleOptionGraphicsItem *,
 		p2 = rectPoints[i] + myEndItem->pos();
 		polyLine = QLineF(p1, p2);
 		QLineF::IntersectType intersectType =
-			polyLine.intersects(centerLine, &intersectPoint);
+			polyLine.intersect(centerLine, &intersectPoint);
 		if (intersectType == QLineF::BoundedIntersection)
 			break;
 		p1 = p2;
